@@ -54,7 +54,7 @@ main {
   box-shadow: 0 0 15px var(--dark-grayish-blue);
 }
 
-.advice-card h2 {
+.advice-heading {
   color: var(--neon-green);
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
@@ -113,7 +113,7 @@ main {
 
 @media screen and (min-width: 50em) {
   .advice-card {
-    max-width: 1440px;
+    max-width: 60ch;
   }
   .divider {
     background-image: url("../images/pattern-divider-desktop.svg");
