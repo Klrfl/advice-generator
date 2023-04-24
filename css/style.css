@@ -33,6 +33,7 @@ img {
 }
 
 main {
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +74,14 @@ main {
   content: close-quote;
 }
 
+.divider {
+  background-image: url("../images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 1rem;
+}
+
 .cta {
   background: var(--neon-green);
   padding: 1rem;
@@ -89,7 +98,7 @@ main {
   padding: 2rem 1rem;
   text-align: center;
   font-size: 0.8rem;
-  transform: translateY(-400%);
+  transform: translateY(-200%);
   transition: transform 200ms ease;
 }
 
@@ -100,4 +109,13 @@ main {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 50em) {
+  .advice-card {
+    max-width: 1440px;
+  }
+  .divider {
+    background-image: url("../images/pattern-divider-desktop.svg");
+  }
 }
