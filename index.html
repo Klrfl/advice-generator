@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet" />
 
-  Advice #<!-- Advice ID goes here -->
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="advice-card">
+        <h2>Advice #<span id="advice-id">0</span></h2>
+        <p id="advice-paragraph">
+          You should click the button below to generate an advice.
+        </p>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <img src="./images/pattern-divider-desktop.svg" alt="" />
+
+        <button class="cta" title="generate advice">
+          <img src="./images/icon-dice.svg" alt="" />
+        </button>
+      </div>
+      <aside class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Klrfl">Klrfl</a>.
+      </aside>
+    </main>
+  </body>
 </html>
