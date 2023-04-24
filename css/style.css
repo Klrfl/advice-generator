@@ -52,10 +52,6 @@ main {
   max-width: 375px;
 }
 
-.advice-card:hover + .attribution {
-  transform: none;
-}
-
 .advice-card h2 {
   color: var(--neon-green);
   font-size: 0.8rem;
@@ -84,6 +80,18 @@ main {
 }
 
 .attribution {
-  transform: translateY(-500%);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  transform: translateY(-400%);
   transition: transform 200ms ease;
+}
+
+.advice-card:hover + .attribution,
+.attribution:hover {
+  transform: none;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
